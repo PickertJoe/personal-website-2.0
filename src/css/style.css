@@ -7,12 +7,26 @@ body {
   margin-top: 53px;
 }
 
+.main-content p {
+  font-weight: 500;
+}
+
 .main-content a {
   color: white;
+  transition: all 0.3s ease;
 }
 
 .main-content a:visited {
   color: white;
+}
+
+.main-content a:hover {
+  color: red;
+}
+
+.main-content li {
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 
 .text-line {
