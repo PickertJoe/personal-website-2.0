@@ -29,10 +29,18 @@ body {
   line-height: 1.5;
 }
 
+.image-thumbnail {
+  height: 50px;
+}
+
 .text-line {
   text-align: center;
   margin-top: 5%;
   color: white;
+}
+
+.text-center {
+  text-align: center
 }
 
 .white-text {
@@ -91,6 +99,12 @@ body {
   font-size: 22px;
   margin-top: 10px;
   margin-left: 20px;
+}
+
+.tech-logo-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-toggle {
