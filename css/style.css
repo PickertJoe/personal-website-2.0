@@ -31,6 +31,7 @@ body {
 
 .image-thumbnail {
   height: 50px;
+  margin: 6px;
 }
 
 .text-line {
@@ -81,12 +82,18 @@ body {
 .main-nav {
   list-style-type: none;
   display: none;
+  padding-left: 0px;
 }
 
 .nav-links,
 .logo {
   text-decoration: none;
   color: #161618;
+}
+
+.logo:hover,
+.nav-links:hover {
+  color: red;
 }
 
 .main-nav li {
@@ -103,6 +110,7 @@ body {
 
 .tech-logo-display {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
