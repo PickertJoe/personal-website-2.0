@@ -63,29 +63,29 @@ ul {
   color: red;
 }
 
-.main-content {
+.container {
   margin-top: 53px;
 }
 
-.main-content a {
+.container a {
   color: white;
   transition: all 0.3s ease;
 }
 
-.main-content a:hover {
+.container a:hover {
   color: red;
 }
 
-.main-content a:visited {
+.container a:visited {
   color: white;
 }
 
-.main-content li {
+.container li {
   font-size: 1.25rem;
   line-height: 1.5;
 }
 
-.main-content p {
+.container p {
   font-weight: 500;
 }
 
@@ -98,6 +98,15 @@ ul {
 .main-nav li {
   text-align: center;
   margin: 15px auto;
+}
+
+.mt-5 {
+  margin-top: 5%;
+}
+
+.my-5 {
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .nav-links {
@@ -136,13 +145,11 @@ ul {
 }
 
 .text-center {
-  text-align: center
+  text-align: center;
 }
 
-.text-line {
-  text-align: center;
-  margin-top: 5%;
-  color: white;
+.text-right {
+  text-align: right;
 }
 
 .white-text {
@@ -158,7 +165,7 @@ ul {
     align-items: center;
   }
 
-  .main-content {
+  .container {
     margin-top: 70px;
   }
 
