@@ -1,0 +1,12 @@
+- name: Joe Pickert
+  link: /
+- name: Blog
+  link: /blog.html
+- name: Work
+  link: /work.html
+- name: Old Portfolio
+  link: https://old.joepickertdev
+- name: About me
+  link: /about.html
+- name: Contact
+  link: /contact.html

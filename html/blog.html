@@ -1,26 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
-    <link rel="stylesheet" href="../css/simple-grid.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <meta name="blog" content="Joe Pickert's personal blog">
-    <title>Joe Pickert | Blog</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="https://joepickert.dev/assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://joepickert.dev/assets/images/favicon-16x16.png">
-  </head>
+---
+title: Joe Pickert | Blog
+og_title: Joe Pickert's Blog
+description: Joe Pickert's Personal Blog
+layout: default
+---
+<div class="container white-text">
+  <div class="row">
+    <div class="col-12">
+      <h1>Latest Posts</h1>
 
-  <body>
-    {% include navbar.html %}
-    <div class="container">
-      <div class="row">
-        <div class="col-12 white-text text-center">
-          <h1>Coming soon to a website near you...</h1>
-          <p>I'd like to revive the blogging aspect of my old portfolio site. Having a place to write about the things I'm actively learning was really fun and rewarding. Stay tuned!</p>
-        </div>
-      </div>
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            {{ post.excerpt }}
+          </li>
+        {% endfor %}
+      </ul>
     </div>
-  </body>
-</html>
+  </div>
+</div>
