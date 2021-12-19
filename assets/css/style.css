@@ -1,3 +1,5 @@
+---
+---
 * {
   box-sizing: border-box;
 }
@@ -154,6 +156,10 @@ ul {
 
 .white-text {
   color: white;
+}
+
+.blog-image {
+  max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
