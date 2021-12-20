@@ -17,7 +17,7 @@ I think it's because we, as authors, are the only ones fully aware of how disapp
 
 Personally, I struggle with letting the pursuit of perfect language distract me from the more important goal: communicating clearly. I'll start out wanting to share a really important thought or feeling and subsequently get stuck for hours on making some stupid transition sentence sound prettier. Would you believe me if I told you I rewrote this blog post three times? Because I did. At least this third draft doesn't make me physically cringe like the first two did.
 
-So, all that is to say that I'm setting an intention to write more *and* write less: to make up for in quantity what I lose in "quality." And if I disappear for another two years...it'll hopefully be for a good reason again!
+So, all that is to say that I'm setting an intention to write more *and* write less: to make up for in quantity what I lose in "quality." And if I disappear for another two years...hopefully it'll be for a good reason again!
 
 (Proof of life)
 
