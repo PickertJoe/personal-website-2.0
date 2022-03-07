@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #161618;
+  background-color: #17301C;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -91,6 +91,13 @@ ul {
   font-weight: 500;
 }
 
+.headshot-image {
+  border: 3px solid;
+  margin-left: 15px;
+  margin-top: 15px;
+  max-width: 50%;
+}
+
 .main-nav {
   list-style-type: none;
   display: none;
@@ -137,6 +144,11 @@ ul {
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
   font-size: 24px;
+}
+
+.resume-blurb {
+  background-color: #CEE7E6;
+
 }
 
 .tech-logo-display {
