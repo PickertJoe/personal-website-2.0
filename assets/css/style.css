@@ -9,13 +9,13 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-li {
+/* li {
   color: white
 }
 
 ul {
   color: white
-}
+} */
 
 #chkToggle {
   display: none;
@@ -93,9 +93,9 @@ ul {
 
 .headshot-image {
   border: 3px solid;
-  margin-left: 15px;
-  margin-top: 15px;
-  max-width: 50%;
+  /* margin-left: 15px;
+  margin-top: 15px; */
+  max-width: 70%;
 }
 
 .main-nav {
@@ -148,7 +148,26 @@ ul {
 
 .resume-blurb {
   background-color: #CEE7E6;
+  max-width: 600px;
+  height: 520px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
 
+.homepage-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+
+}
+
+@media (min-width: 769px) {
+  .homepage-flex {
+    column-gap: 150px;
+    flex-direction: row;
+  }
 }
 
 .tech-logo-display {
