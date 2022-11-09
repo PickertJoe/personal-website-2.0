@@ -4,14 +4,58 @@ og_title: Joe Pickert's Developer Portfolio
 description: The personal website of Joe Pickert
 layout: default
 ---
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h1 class="white-text text-center mt-5">Full stack web developer</h1>
-      <h1 class="white-text text-center mt-5">Multi-disciplinary engineer</h1>
-      <h1 class="white-text text-center mt-5">A once and future mountain guide</h1>
-      <hr>
-      <h1 class="white-text text-center mt-5">Welcome to my website</h1>
+<div class="container homepage">
+  <div class="homepage__resume-blurb">
+    <div class="homepage__resume-blurb-headshot-and-links">
+      <div class="homepage__resume-blurb-headshot">
+        <img alt="headshot of Joe, a 25 year old man with short, brown hair and blue eyes" src="/assets/images/smaller_headshot.jpg" style="border: 5px solid black; width: 90%" class="my-5">
+      </div>
+      <div class="resume-links-container my-5">
+        <a href="/assets/files/RESUME.PDF" download><img src="/assets/images/pdf.png"></a>
+        <a href="https://github.com/PickertJoe" target="_blank"><img src="/assets/images/github.png"></a>
+        <a href="https://www.linkedin.com/in/joseph-pickert" target="_blank"><img src="/assets/images/linkedin.png"></a>
+        <a href="mailto:josephpickert@gmail.com" target="_blank"><img src="/assets/images/mail.png"></a>
+      </div>
+    </div>
+    <div class="homepage__resume-blurb-core-competencies">
+      <h3 class="homepage__resume-blurb-core-competencies-header" style="margin: 0">Core Competencies</h3>
+      <ul>
+        <li>Ruby, Rails, Javascript, React, NextJS</li>
+        <li>PostgreSQL, Redis, DynamoDB</li>
+        <li>Object oriented design</li>
+        <li>AWS (S3, EKS, Lambda, Cloudfront, IAM)</li>
+      </ul>
     </div>
   </div>
+  <div class="homepage__side-text">
+    <span id="typeText" class="typeing"></span>
+  </div>
 </div>
+
+<script>
+  const data = [
+    {
+      typeText: "<span>Hey! My name is Joe 🙂</span><br/><hr><span>Welcome to my website</span><br/>"
+    }
+  ];
+
+  let allElements = document.getElementsByClassName("typeing");
+  for (let j = 0; j < allElements.length; j++) {
+    let currentElementId = allElements[j].id;
+    let currentElementIdContent = data[0][currentElementId];
+    let element = document.getElementById(currentElementId);
+    let devTypeText = currentElementIdContent;
+
+    let i = 0, isTag, text;
+    (function type() {
+      text = devTypeText.slice(0, ++i);
+      if (text === devTypeText) return;
+      element.innerHTML = text + `<span class='blinker'>&#32;</span>`;
+      let char = text.slice(-1);
+      if (char === "<") isTag = true;
+      if (char === ">") isTag = false;
+      if (isTag) return type();
+      setTimeout(type, 90);
+    })();
+  }
+</script>
