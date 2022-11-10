@@ -10,6 +10,12 @@ body {
   margin-top: 53px;
 }
 
+span {
+  color: yellow;
+  font-family: monospace;
+  font-size: 2rem;
+}
+
 #chkToggle {
   display: none;
 }
@@ -144,6 +150,10 @@ body {
   align-items: center;
 }
 
+.employer-logo-image {
+  width: 156px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -167,6 +177,11 @@ body {
   margin-top: 80px;
 }
 
+.homepage__resume-blurb {
+  background-color: white;
+  max-width: 394px;
+}
+
 .homepage__resume-blurb-headshot-and-links {
   align-items: center;
   display: flex;
@@ -174,7 +189,7 @@ body {
   justify-content: space-evenly;
 }
 
-.resume-links-container {
+.homepage__resume-blurb-links-container {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -182,24 +197,18 @@ body {
   width: 100%
 }
 
-.homepage__resume-blurb-core-competencies {
-  padding: 0 1rem;
-}
-
 .homepage__resume-blurb-core-competencies-header {
   margin: 0;
   text-align: center;
 }
 
+.homepage__resume-blurb-core-competencies {
+  padding: 0 1rem;
+}
+
 .homepage__resume-blurb-headshot {
   max-width: 300px;
   text-align: center;
-}
-
-span {
-  color: yellow;
-  font-family: monospace;
-  font-size: 2rem;
 }
 
 .blinker {
@@ -211,19 +220,14 @@ span {
   animation: blinker 0.9s steps(2, start) infinite;
 }
 
-.work-experience {
-  margin-top: 100px;
-}
-
 .homepage__side-text {
   display: flex;
   align-items: center;
   text-align: center;
 }
 
-.homepage__resume-blurb {
-  background-color: white;
-  max-width: 394px;
+.work-experience {
+  margin-top: 100px;
 }
 
 
@@ -255,12 +259,12 @@ span {
     padding-right: 1rem;
   }
 
-  .resume-links-container {
+  .homepage__resume-blurb-links-container {
     flex-direction: column;
     row-gap: 1rem;
   }
 
-  .resume-links-container img {
+  .homepage__resume-blurb-links-container img {
     width: 100%;
   }
 
@@ -315,9 +319,3 @@ span {
     color: red;
   }
 }
-
-.employer-logo-image {
-  width: 156px;
-}
-
-
