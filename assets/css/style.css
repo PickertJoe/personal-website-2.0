@@ -5,27 +5,32 @@
 }
 
 body {
-  background-color: #161618;
+  background-color: #E2E2E2;
   font-family: 'Josefin Sans', sans-serif;
   margin-top: 53px;
 }
 
 span {
-  color: yellow;
+  color: #00c6bf;
   font-family: monospace;
   font-size: 2rem;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  width: 100%;
 }
 
 #chkToggle {
   display: none;
 }
 
-#chkToggle:checked + ul.main-nav {
+#chkToggle:checked + .main-nav {
   display: block;
-}
-
-.black-text {
-  color: black;
 }
 
 .hamburger-menu {
@@ -65,7 +70,6 @@ span {
 }
 
 .container a {
-  color: white;
   transition: all 0.3s ease;
 }
 
@@ -74,7 +78,7 @@ span {
 }
 
 .container a:visited {
-  color: white;
+  color: #00c6bf;
 }
 
 .container li {
@@ -97,7 +101,7 @@ span {
   padding-left: 0px;
 }
 
-.main-nav li {
+.main-nav a {
   text-align: center;
   margin: 15px auto;
 }
@@ -124,12 +128,12 @@ span {
   color: red;
 }
 
-.navbar {
+.page-navbar {
+  background-color: #E2E2E2;
   font-size: 18px;
-  background-color: white;
+  gap: 8px;
   padding-bottom: 10px;
-  position: fixed;
-  top: 0;
+  margin: auto;
   width: 100%;
   z-index: 999;
 }
@@ -162,10 +166,6 @@ span {
   text-align: right;
 }
 
-.white-text {
-  color: white;
-}
-
 .blog-image {
   max-width: 100%;
 }
@@ -178,15 +178,33 @@ span {
 }
 
 .homepage__resume-blurb {
-  background-color: white;
-  max-width: 394px;
+  background-color: #0A2463;
+  color: #FDFBD4; 
+  max-width: 700px;
+  padding: 12px;
+  border-radius: 48px;
 }
 
-.homepage__resume-blurb-headshot-and-links {
-  align-items: center;
+.homepage__resume-blurb-headshot-and-core-competencies-container {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.homepage__resume-blurb-headshot {
+  align-items: center;
+  display: flex;
+  flex-basis: 0;
+  flex-direction: column;
+  flex-grow: 1;
   justify-content: space-evenly;
+}
+
+.homepage__resume-blurb-core-competencies {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding-block-start: 1rem;
 }
 
 .homepage__resume-blurb-links-container {
@@ -197,55 +215,51 @@ span {
   width: 100%
 }
 
-.homepage__resume-blurb-core-competencies-header {
+.homepage__resume-blurb-links-header {
   margin: 0;
   text-align: center;
 }
 
-.homepage__resume-blurb-core-competencies {
-  padding: 0 1rem;
+.homepage__resume-blurb-hero-text {
+  color: #FDFBD4;
+  padding-inline: 1rem;
 }
 
 .homepage__resume-blurb-headshot {
-  max-width: 300px;
   text-align: center;
 }
-
-.blinker {
-  opacity: 1;
-  margin-bottom: -2px;
-  height: 15px;
-  margin-left: -5px;
-  border-left: 7px solid yellow;
-  animation: blinker 0.9s steps(2, start) infinite;
-}
-
-.homepage__side-text {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.work-experience {
-  margin-top: 100px;
-}
-
 
 @media screen and (min-width: 768px) {
   body {
-    margin-top: 70px;
+    margin-top: unset;
   }
 
-  .navbar {
+  .page-wrapper {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  
+  .page-navbar {
+    align-items: flex-end;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 250px;
     padding-bottom: 0;
-    height: 70px;
-    align-items: center;
+    width: 20%;
+  }
+
+  .hamburger-menu:before {
+    content: unset;
   }
 
   .row {
     flex-direction: row;
+  }
+
+  .page-content {
+    padding-top: 4rem;
+    width: 80%;
   }
 
   .homepage {
@@ -254,35 +268,38 @@ span {
     column-gap: 2rem;
   }
 
-  .homepage__resume-blurb-headshot-and-links {
+  .homepage__resume-blurb-headshot {
     flex-direction: row;
-    padding-right: 1rem;
+  }
+
+  .homepage__resume-blurb-headshot-and-core-competencies-container {
+    flex-direction: row;
   }
 
   .homepage__resume-blurb-links-container {
-    flex-direction: column;
-    row-gap: 1rem;
+    flex-direction: row;
+    column-gap: 1rem;
   }
 
   .homepage__resume-blurb-links-container img {
     width: 100%;
   }
 
-  .homepage__resume-blurb-core-competencies {
+  .homepage__resume-blurb-links {
+    display: flex;
+    flex-direction: row;
     padding: 0 1rem;
   }
 
-  .homepage__resume-blurb-core-competencies-header {
+  .homepage__resume-blurb-core-competetencies {
+    flex-grow: 1;
+  }
+
+  .homepage__resume-blurb-links-header {
     text-align: left;
   }
 
-  .homepage__side-text {
-    display: flex;
-    align-items: center;
-    text-align: left;
-  }
-
-  #chkToggle:checked + ul.main-nav {
+  #chkToggle:checked + .main-nav {
     display: flex;
   }
 
@@ -293,12 +310,12 @@ span {
     justify-content: flex-end;
   }
 
-  .main-nav ul {
+  .main-nav {
     padding: 0 !important;
     margin: 0 !important;
   }
 
-  .main-nav li {
+  .main-nav a {
     margin: 0;
   }
 
@@ -316,6 +333,6 @@ span {
 
   .logo:hover,
   .nav-links:hover {
-    color: red;
+    color: #00c6bf;
   }
 }

@@ -19,7 +19,11 @@
     <meta property="og:image" content="https://joepickert.dev/assets/images/headshot.jpg">
   </head>
   <body>
-    {% include navbar.html %}
-    {{ content }}
+    <div class="page-wrapper">
+      {% include navbar.html %}
+      <div class="page-content">
+        {{ content }}
+      </div>
+    </div>
   </body>
 </html>
